@@ -6,7 +6,6 @@
 <header>Задача 3</header>
 
 <p> <p>
-    
     <?php
     $cust = array("cnum" => "2001",
         "cname" => "Hoffman",
