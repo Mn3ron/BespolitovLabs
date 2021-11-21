@@ -48,5 +48,7 @@
 
 
     ?>
+    <p> </p>
+    <input type="button" value="Обновить" onClick="window.location.reload( true );">
 </body>
 </html>
