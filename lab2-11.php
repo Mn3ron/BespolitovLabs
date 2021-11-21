@@ -2,7 +2,7 @@
 <head>
 </head>
 <body>
-
+<header>Бесполитов Д.А.</header>
 <header>Задача 3</header>
 
 <p> Вариант 1:

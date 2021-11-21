@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<header>Бесполитов Д.А. Лабы</header>
+<header>Бесполитов Д.А.</header>
 
 <nav>Лабы</nav>
 <ol>
