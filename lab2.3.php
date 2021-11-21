@@ -6,7 +6,6 @@
 <header>Задача 3</header>
 
 <p> <p>
-    
     <?php
     $cust = array("cnum" => "2001",
         "cname" => "Hoffman",
@@ -37,7 +36,6 @@
         echo "$key = $value <br />";
     }
     ?>
-    
 <p><a href= "index.php">Назад</a></p>
 </body>
 </html>
