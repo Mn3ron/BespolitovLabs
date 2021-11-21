@@ -22,8 +22,8 @@
 <ol>
     <li>Лаба 1</li>
     <ol >
-        <li>Задача 1</li>
-        <li>Задача 2</li>
+        <li> <a href= "lab1-5.php">Задача 1</a> </li>
+        <li> <a href= "lab1-5.php">Задача 2</a> </li>
     </ol>
     <li>Лаба 2</li>
     <li>Лаба 3</li>
