@@ -23,8 +23,8 @@
     <li>Лаба 1</li>
     <ol >
         <li> <a href= "lab1-5.php">Задача 1</a> </li>
-        <li> <a href= "lab2-10.php">Задача 2</a> </li>
-        <li> <a href= "lab2-11.php">Задача 3</a> </li>
+        <li> <a href= "lab1-10.php">Задача 2</a> </li>
+        <li> <a href= "lab1-11.php">Задача 3</a> </li>
     </ol>
     <li>Лаба 2</li>
     <li>Лаба 3</li>
