@@ -16,12 +16,13 @@
     {
         echo "$key = $value <br />";
     }
-    /*$cust[rating] =100;
+    $cust["rating"] =100;
+
     print ("Дополненый массив с ключами: " . '<br>');
     foreach($cust as $key => $value)
     {
         echo "$key = $value <br />";
-    }*/
+    }
     print ("Сортировка по ключам: ". '<br>');
     ksort($cust);
     foreach($cust as $key => $value)
