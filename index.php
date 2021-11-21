@@ -33,6 +33,7 @@
         <li> <a href= "lab2.3.php">Задача 3</a> </li>
         <li> <a href= "lab2.4.php">Задача 4</a> </li>
         <li> <a href= "lab2.5.php">Задача 5</a> </li>
+        <li> <a href= "lab2.6.php">Задача 6</a> </li>
     </ol>
     <li>Лаба 3</li>
     <ol>
