@@ -37,6 +37,7 @@
         echo "$key = $value <br />";
     }
     ?>
+    
 <p><a href= "index.php">Назад</a></p>
 </body>
 </html>
