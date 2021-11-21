@@ -27,7 +27,22 @@
         <li> <a href= "lab1-11.php">Задача 3</a> </li>
     </ol>
     <li>Лаба 2</li>
+    <ol>
+        <li> <a href= "lab2.1.php">Задача 1</a> </li>
+        <li> <a href= "lab2.2.php">Задача 2</a> </li>
+        <li> <a href= "lab2.3.php">Задача 3</a> </li>
+        <li> <a href= "lab2.4.php">Задача 4</a> </li>
+        <li> <a href= "lab2.5.php">Задача 5</a> </li>
+    </ol>
     <li>Лаба 3</li>
+    <ol>
+        <li> <a href= "lab3.1.php">Задача 1</a> </li>
+        <li> <a href= "lab3.2.php">Задача 2</a> </li>
+        <li> <a href= "lab3.3.php">Задача 3</a> </li>
+        <li> <a href= "lab3.4.php">Задача 4</a> </li>
+        <li> <a href= "lab3.5.php">Задача 5</a> </li>
+        <li> <a href= "lab3.6.php">Задача 6</a> </li>
+    </ol>
     <li>Лаба 4</li>
 </ol>
 
