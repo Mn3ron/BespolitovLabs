@@ -37,7 +37,7 @@
     </ol>
     <li>Лаба 3</li>
     <ol>
-        <li> <a href= "lab3.1.php">Задача 1</a> </li>
+        <li> <a href= "lab3.1.html">Задача 1</a> </li>
         <li> <a href= "lab3.2.php">Задача 2</a> </li>
         <li> <a href= "lab3.3.php">Задача 3</a> </li>
         <li> <a href= "lab3.4.php">Задача 4</a> </li>
