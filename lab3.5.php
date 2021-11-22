@@ -115,9 +115,27 @@
 <?
 if (isset($_POST["obr"])) {
     $login = $_POST["login"];
-    echo $login;
-    $result = ($_POST["ch1"]+$_POST["ch2"]+ $_POST["ch3"]+ $_POST["ch4"]+$_POST["ch5"]+ $_POST["ch6"]+ $_POST["ch7"]+$_POST["ch8"]+ $_POST["ch9"]+ $_POST["ch10"]+$_POST["ch111"]+ $_POST["ch12"]+ $_POST["ch13"]+$_POST["ch14"]+ $_POST["ch15"]+ $_POST["ch16"]+$_POST["ch17"]+ $_POST["ch18"]+ $_POST["ch19"]+ $_POST["ch20"]);
-
+    $ch1 = $_POST["ch1"];
+    $ch2 = $_POST["ch2"];
+    $ch3 = $_POST["ch3"];
+    $ch4 = $_POST["ch4"];
+    $ch5 = $_POST["ch5"];
+    $ch6 = $_POST["ch6"];
+    $ch7 = $_POST["ch7"];
+    $ch8 = $_POST["ch8"];
+    $ch9 = $_POST["ch9"];
+    $ch10 = $_POST["ch10"];
+    $ch11 = $_POST["ch11"];
+    $ch12 = $_POST["ch12"];
+    $ch13 = $_POST["ch13"];
+    $ch14 = $_POST["ch14"];
+    $ch15 = $_POST["ch15"];
+    $ch16 = $_POST["ch16"];
+    $ch17 = $_POST["ch17"];
+    $ch18 = $_POST["ch18"];
+    $ch19 = $_POST["ch19"];
+    $ch20 = $_POST["ch20"];
+    $result = ($ch1 + $ch2 + $ch3 + $ch4 + $ch5 +  $ch6 +  $ch7 +  $ch8 +  $ch9 +  $ch10 +  $ch11 +  $ch12 +  $ch13 +  $ch14 +  $ch15 +  $ch16 +  $ch17 +  $ch18 +  $ch19 + $ch20);
     if ($result > 15) print ($login. ", У Вас покладистый характер");
     elseif ($result > 7) print ($login. ", Вы не лишены недостатков, но с
 вами можно ладить");
