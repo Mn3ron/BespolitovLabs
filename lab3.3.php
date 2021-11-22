@@ -5,7 +5,7 @@
 <header>Бесполитов Д.А.</header>
 <header>Задача 3</header>
 
-<<FORM method="post" action="<?php print $PHP_SELF ?>">
+<FORM method="post" action="<?php print $PHP_SELF ?>">
 
     Введите N: <INPUT type="number" name="n" size="3" required>
     <p> <p>
