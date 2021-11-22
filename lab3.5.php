@@ -115,8 +115,8 @@
 </FORM>
 <?
 if (isset($_POST["obr"])) {
-    $pr1 = 3;
-    $pr2 = 5;
+    print ("Логин: ");
+    print ($_POST["login"]);
 
     $result = ($_POST["ch1"]+$_POST["ch2"]+ $_POST["ch3"]+ $_POST["ch4"]+$_POST["ch5"]+ $_POST["ch6"]+ $_POST["ch7"]+$_POST["ch8"]+ $_POST["ch9"]+ $_POST["ch10"]+$_POST["ch111"]+ $_POST["ch12"]+ $_POST["ch13"]+$_POST["ch14"]+ $_POST["ch15"]+ $_POST["ch16"]+$_POST["ch17"]+ $_POST["ch18"]+ $_POST["ch19"]+ $_POST["ch20"]);
     if ($result > 15) print ($_POST["login"]. ", У Вас покладистый характер");
