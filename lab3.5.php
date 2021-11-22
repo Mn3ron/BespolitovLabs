@@ -109,14 +109,14 @@
         <INPUT type="radio" name="ch20" checked>Да
         <INPUT type="radio" name="ch20" value="1">Нет
         <p> <p>
-
-        <P> <INPUT type="submit" name="obr" value="Готово">
     </ol>
+        <P> <INPUT type="submit" name="obr" value="Готово">
 </FORM>
-<?php
+<?
 if (isset($_POST["obr"])) {
     $login = $_POST["login"];
     $result = ($_POST["ch1"]+$_POST["ch2"]+ $_POST["ch3"]+ $_POST["ch4"]+$_POST["ch5"]+ $_POST["ch6"]+ $_POST["ch7"]+$_POST["ch8"]+ $_POST["ch9"]+ $_POST["ch10"]+$_POST["ch111"]+ $_POST["ch12"]+ $_POST["ch13"]+$_POST["ch14"]+ $_POST["ch15"]+ $_POST["ch16"]+$_POST["ch17"]+ $_POST["ch18"]+ $_POST["ch19"]+ $_POST["ch20"]);
+    echo $login;
     if ($result > 15) print ($login. ", У Вас покладистый характер");
     elseif ($result > 7) print ($login. ", Вы не лишены недостатков, но с
 вами можно ладить");
