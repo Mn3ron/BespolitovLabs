@@ -4,7 +4,6 @@
 <body>
 <header>Бесполитов Д.А.</header>
 <header>Задача 5</header>
-
 <FORM method="post" action="<?php print $PHP_SELF ?>">
     <FONT SIZE="5"><p><b>Анкета "Ваш характер"</b></p> </FONT>
     Введите ваше имя: <INPUT size = "text" type="text" name="login" size="3" required>
