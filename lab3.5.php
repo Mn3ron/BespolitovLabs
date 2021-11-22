@@ -135,7 +135,9 @@ if (isset($_POST["obr"])) {
     $ch18 = $_POST["ch18"];
     $ch19 = $_POST["ch19"];
     $ch20 = $_POST["ch20"];
+    echo $ch19;
     $result = ($ch1 + $ch2 + $ch3 + $ch4 + $ch5 +  $ch6 +  $ch7 +  $ch8 +  $ch9 +  $ch10 +  $ch11 +  $ch12 +  $ch13 +  $ch14 +  $ch15 +  $ch16 +  $ch17 +  $ch18 +  $ch19 + $ch20);
+    echo $ch20;
     if ($result > 15) print ($login. ", У Вас покладистый характер");
     elseif ($result > 7) print ($login. ", Вы не лишены недостатков, но с
 вами можно ладить");
