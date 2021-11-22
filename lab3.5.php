@@ -115,14 +115,12 @@
 </FORM>
 <?
 if (isset($_POST["obr"])) {
-    print ("Логин: ");
-    print ($_POST["login"]);
-
+    $login = $_POST["login"];
     $result = ($_POST["ch1"]+$_POST["ch2"]+ $_POST["ch3"]+ $_POST["ch4"]+$_POST["ch5"]+ $_POST["ch6"]+ $_POST["ch7"]+$_POST["ch8"]+ $_POST["ch9"]+ $_POST["ch10"]+$_POST["ch111"]+ $_POST["ch12"]+ $_POST["ch13"]+$_POST["ch14"]+ $_POST["ch15"]+ $_POST["ch16"]+$_POST["ch17"]+ $_POST["ch18"]+ $_POST["ch19"]+ $_POST["ch20"]);
-    if ($result > 15) print ($_POST["login"]. ", У Вас покладистый характер");
-    elseif ($result > 7) print ($_POST["login"]. ", Вы не лишены недостатков, но с
+    if ($result > 15) print ($login. ", У Вас покладистый характер");
+    elseif ($result > 7) print ($login. ", Вы не лишены недостатков, но с
 вами можно ладить");
-    else print ($_POST["login"]. ", Вашим друзьям можно посочувствовать");
+    else print ($login. ", Вашим друзьям можно посочувствовать");
 }
 ?>
 <p><a href= "index.php">Назад</a></p>
