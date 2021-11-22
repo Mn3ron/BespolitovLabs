@@ -113,7 +113,7 @@
         <P> <INPUT type="submit" name="obr" value="Готово">
     </ol>
 </FORM>
-<?
+<?php
 if (isset($_POST["obr"])) {
     $login = $_POST["login"];
     $result = ($_POST["ch1"]+$_POST["ch2"]+ $_POST["ch3"]+ $_POST["ch4"]+$_POST["ch5"]+ $_POST["ch6"]+ $_POST["ch7"]+$_POST["ch8"]+ $_POST["ch9"]+ $_POST["ch10"]+$_POST["ch111"]+ $_POST["ch12"]+ $_POST["ch13"]+$_POST["ch14"]+ $_POST["ch15"]+ $_POST["ch16"]+$_POST["ch17"]+ $_POST["ch18"]+ $_POST["ch19"]+ $_POST["ch20"]);
