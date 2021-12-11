@@ -45,6 +45,9 @@
         <li> <a href= "lab3.6.html">Задача 6</a> </li>
     </ol>
     <li>Лаба 4</li>
+    <ol>
+        <li> <a href= "lab4.1.php">Таблица</a> </li>
+    </ol>
 </ol>
 
 
