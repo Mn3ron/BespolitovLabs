@@ -3,7 +3,14 @@
 <body>
 <header>Бесполитов Д.А.</header>
 
+<?php
+mysql_connect("sql11.freesqldatabase.com", "sql11458111", "ur5ZSxfQ8B") or die ("Невозможно
+подключиться к серверу"); // установление соединения с сервером
+mysql_query('SET NAMES cp1251'); // тип кодировки
+// подключение к базе данных:
+mysql_select_db("sql11458111") or die("Нет такой таблицы!");
 
+?>
 <h2>Игры:</h2>
 <table border="1">
     <tr>
