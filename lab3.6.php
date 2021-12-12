@@ -22,10 +22,10 @@
     }
     unset($varPred[$indOfWord]);
     for ($i = 0; $i <= strlen($var9);$i++){
-        if ($var9Array[$i] == ".") $countPred++;
-        if ($var9Array[$i] == "!") $countPred++;
-        if ($var9Array[$i] == "?") $countPred++;
-        if ($var9Array[$i] == "…") $countPred++;
+     if ($var9Array[$i] == ".") $countPred++;
+     if ($var9Array[$i] == "!") $countPred++;
+     if ($var9Array[$i] == "?") $countPred++;
+     if ($var9Array[$i] == "…") $countPred++;
     }
     if ($countPred == 0) $countPred++;
     echo '<br>';

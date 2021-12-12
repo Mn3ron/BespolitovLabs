@@ -16,8 +16,8 @@
     {
         echo "$key = $value <br />";
     }
-    $cust["rating"] =100;
 
+    $cust["rating"] =100;
     print ("Дополненый массив с ключами: " . '<br>');
     foreach($cust as $key => $value)
     {

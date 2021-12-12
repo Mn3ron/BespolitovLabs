@@ -51,6 +51,5 @@
     <p> </p>
     <input type="button" value="Обновить" onClick="window.location.reload( true );">
     <p><a href= "index.php">Назад</a></p>
-
 </body>
 </html>

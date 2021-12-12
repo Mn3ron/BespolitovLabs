@@ -38,11 +38,6 @@
         print ( $rez1[$i] ." ");
     }
 
-
-
-
-
-
     ?>
 <p><a href= "index.php">Назад</a></p>
 </body>

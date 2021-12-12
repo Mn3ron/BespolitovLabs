@@ -27,7 +27,7 @@ if (isset($_POST["obr"])) {
             For ($i = 1; $i<=$n;$i++){
                 $mass[$i] = $i;
                 if (($mass[$i] % 2) == 0)
-                    print ( $mass[$i] ." ");
+                print ( $mass[$i] ." ");
             }
             break;
         case 2:
@@ -49,8 +49,8 @@ if (isset($_POST["obr"])) {
                     }
                 }
                 if ($flag == true) print ( $mass[$i] ." ");
-            }
-            break;
+                }
+        break;
 
 
         case 4:

@@ -6,6 +6,8 @@
 <header>Задача 6</header>
 
 <p> <p>
+
+
     <?php
     include ('myLib.php');
     tasktext(9);
@@ -20,6 +22,7 @@
     print  '<br>';
     $arr2 = task2($arr,$n,$m);
     printmass($arr2,$n,$m);
+
     ?>
 <p></p>
 <input type="button" value="Обновить" onClick="window.location.reload( true );">

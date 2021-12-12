@@ -4,7 +4,7 @@
 <header>Бесполитов Д.А.</header>
 <H2>Добавление игры:</H2>
 <form action="save_new.php" metod="get">
-    Название: <input name="game_name" size="50" type="text">
+    Название: <input name="game_name" size="50" type="text" required>
     <br>Жанр: <input name="game_genre" size="50" type="text">
     <br>Разработчик: <input name="game_developer" size="50" type="text">
     <br>Издатель: <input name="game_publisher" size="50" type="text">

@@ -4,7 +4,6 @@
 <body>
 <header>Бесполитов Д.А.</header>
 <header>Задача 2</header>
-
 <FORM method="post" action="<?php print $PHP_SELF ?>">
 
     а: <INPUT type="number" name="a" size="3" required>
@@ -37,7 +36,7 @@ if (isset($_POST["obr"])) {
             if ($b == 0)
                 echo ("На ноль делить нельзя");
             else
-                echo ($a / $b);
+            echo ($a / $b);
             break;
     }
 

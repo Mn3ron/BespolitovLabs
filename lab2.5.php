@@ -22,7 +22,7 @@
             return $t*$t + $u;
         } else return $u+$t;
 
-    }
+        }
     ?>
 <p> Вариант 2:
 <p>

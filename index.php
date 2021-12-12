@@ -46,7 +46,7 @@
     </ol>
     <li>Лаба 4</li>
     <ol>
-        <li> <a href= "lab4.1.php">Таблица</a> </li>
+        <li> <a href= "DB_Games\lab4.1.php">Таблицы</a> </li>
     </ol>
 </ol>
 

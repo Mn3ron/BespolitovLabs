@@ -4,6 +4,7 @@
 <body>
 <header>Бесполитов Д.А.</header>
 <header>Задача 1</header>
+
 <p> <p>
     <?php
 

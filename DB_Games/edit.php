@@ -5,12 +5,12 @@
 </head>
 <body>
 <?php
-mysql_connect("sql11.freesqldatabase.com", "sql11458111", "ur5ZSxfQ8B") or die ("Невозможно
+mysql_connect("localhost", "root") or die ("Невозможно
 подключиться к серверу"); // установление соединения с сервером
 mysql_query('SET NAMES cp1251'); // тип кодировки
 // подключение к базе данных:
 mysql_select_db("sql11458111") or die("Нет такой таблицы!");
-$rows=mysql_query("SELECT Name, Genre, Developer,Publisher,Sales FROM Games 
+$rows=mysql_query("SELECT Name_game, Genre, Developer,Publisher,Sales FROM Games 
 WHERE id_game=".$_GET['id']);
 while ($st = mysql_fetch_array($rows)) {
     $id=$_GET['id'];
