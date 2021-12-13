@@ -34,7 +34,7 @@ $result=mysql_query("SELECT id_game,name_game FROM Games");
 echo " <br>Игра: <select name='selectgame'>";
 while ($row=mysql_fetch_array($result)){// для каждой строки из запроса
 
-    echo "<option value=".$row['id_game'] .">". $row['name_game']."</option> ";
+    echo "<option value=".$row['id_game'] ." >". $row['name_game']."</option> ";
 
 }
 echo  "</select>";
@@ -42,7 +42,7 @@ $result=mysql_query("SELECT id_store,name FROM Stores");
 echo " <br>Магазин: <select name='selectstore'>";
 while ($row=mysql_fetch_array($result)){// для каждой строки из запроса
 
-    echo "<option value=".$row['id_store'] .">". $row['name']."</option> ";
+    echo "<option value=".$row['id_store'] ." >". $row['name']."</option> ";
 
 }
 print "<input type='hidden' name='id' value='".$id."'> <br>";

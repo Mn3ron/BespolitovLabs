@@ -16,7 +16,7 @@ if (mysql_affected_rows()>0) {
 игр </a>'; }
 else { echo 'Ошибка сохранения. <a href="lab4.1.php">
 Вернуться к списку игр</a> ';
-echo $_GET['id'] ;
+
 
 }
 ?>

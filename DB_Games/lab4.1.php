@@ -106,6 +106,8 @@ mysql_select_db("sql11458111") or die("Нет такой таблицы!");
             print("<P>Всего ключей: $num_rows </p>");
             ?>
             <p> <a href="new_key.php"> Добавить ключ</a>
+            <p> <a href="gen_pdf.php"> PDF</a>
+            <p> <a href="gen_xls.php"> XLS</a>
 <p><a href= "../index.php">Назад</a></p>
 </body>
 </html>
