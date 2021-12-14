@@ -23,15 +23,15 @@ while ($st = mysql_fetch_array($rows)) {
 
 print "<form action='save_edit.php' metod='get'>";
 print "Название: <input name='game_name' size='50' type='text'
-value='".$name."'>";
+value='".$name."'required>";
 print "<br>Жанр: <input name='game_genre' size='50' type='text'
-value='".$genre."'>";
+value='".$genre."'required>";
 print "<br>Разработчик: <input name='game_developer' size='50' type='text'
-value='".$developer."'>";
+value='".$developer."'required>";
 print "<br>Издатель: <input name='game_publisher' size='50' type='text'
-value='".$publisher."'>";
+value='".$publisher."'required>";
 print "<br>Объем продаж: <input name='game_sales' size='50' type='number' min = '1' step = '1'
-value='".$sales."'>";
+value='".$sales."'required>";
 print "<input type='hidden' name='id' value='".$id."'> <br>";
 print "<input type='submit' name='' value='Сохранить'>";
 print "</form>";

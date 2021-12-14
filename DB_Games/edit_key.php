@@ -22,14 +22,14 @@ while ($st = mysql_fetch_array($rows)) {
 }
 
 print "<form action='save_edit_key.php' metod='get'>";
-print "Дата продажи: <input name='kdata_p'  type='date'
-value='".$data_p."'>";
-print "<br>Дата окончания: <input name='kdata_end'  type='date'
-value='".$data_end."'>";
+print "Дата продажи: <input name='kdata_p'  type='date' max='".date('Y-m-d')."'
+value='".$data_p."'required>";
+print "<br>Дата окончания: <input name='kdata_end'  type='date' min='".date('Y-m-d')."'
+value='".$data_end."'required>";
 print "<br>Цена: <input name='key_price' size='11' type='number' min = '1'
-value='".$price."'>";
+value='".$price."'required>";
 print "<br>Ключ: <input name='key' size='16' type='text'
-value='".$game_key."'>";
+value='".$game_key."'required>";
 $result=mysql_query("SELECT id_game,name_game FROM Games");
 echo " <br>Игра: <select name='selectgame'>";
 while ($row=mysql_fetch_array($result)){// для каждой строки из запроса

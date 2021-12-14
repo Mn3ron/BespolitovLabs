@@ -8,12 +8,12 @@ mysql_connect("localhost", "root") or die ("Невозможно
 mysql_query('SET NAMES cp1251'); // тип кодировки
 // подключение к базе данных:
 mysql_select_db("sql11458111") or die("Нет такой таблицы!");
-
 ?>
-<H2>Добавление магазина:</H2>
+<H2>Добавление ключа:</H2>
 <form action="save_new_key.php" metod="get">
-    Дата покупки: <input name="data_p"  type="date" required>
-    <br>Дата окончания: <input name="data_end"  type="date" required>
+
+    Дата покупки: <input name="data_p"  type="date" max= "<? echo date("Y-m-d"); ?>" required>
+    <br>Дата окончания: <input name="data_end"  type="date" min="<? echo date("Y-m-d"); ?>"required>
     <br>Цена: <input name="price" size="11" type="number" min ='1' required>
     <br>Ключ: <input name="game_key" size="50" type="text" required>
         <?php
