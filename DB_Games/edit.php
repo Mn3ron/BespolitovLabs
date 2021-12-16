@@ -4,7 +4,8 @@
 <title> Редактирование данных об игре </title>
 </head>
 <body>
-<?php
+<?php error_reporting(E_ALL ^ E_DEPRECATED);
+
 mysql_connect("localhost", "root") or die ("Невозможно
 подключиться к серверу"); // установление соединения с сервером
 mysql_query('SET NAMES cp1251'); // тип кодировки

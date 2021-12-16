@@ -2,7 +2,7 @@
 <head> <title> Добавление нового ключа</title> </head>
 <body>
 <header>Бесполитов Д.А.</header>
-<?php
+<?php error_reporting(E_ALL ^ E_DEPRECATED);
 mysql_connect("localhost", "root") or die ("Невозможно
 подключиться к серверу"); // установление соединения с сервером
 mysql_query('SET NAMES cp1251'); // тип кодировки
@@ -16,7 +16,7 @@ mysql_select_db("sql11458111") or die("Нет такой таблицы!");
     <br>Дата окончания: <input name="data_end"  type="date" min="<? echo date("Y-m-d"); ?>"required>
     <br>Цена: <input name="price" size="11" type="number" min ='1' required>
     <br>Ключ: <input name="game_key" size="50" type="text" required>
-        <?php
+        <?php error_reporting(E_ALL ^ E_DEPRECATED);
         //id_key,Data_P,Data_end, id_game,id_store,price,Game_key
         $result=mysql_query("SELECT id_game,name_game FROM Games");
         echo " <br>Игра: <select name='selectgame'>";

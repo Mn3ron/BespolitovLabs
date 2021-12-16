@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL ^ E_DEPRECATED);
 // Подключение к базе данных:
 
 mysql_connect("localhost", "root") or die ("Невозможно

@@ -2,7 +2,8 @@
 <head> <title> Сведения об играх </title> </head>
 <body>
 <header>Бесполитов Д.А.</header>
-<?php
+<?php error_reporting(E_ALL ^ E_DEPRECATED);
+error_reporting(E_ALL ^ E_DEPRECATED);
 mysql_connect("localhost", "root") or die ("Невозможно
 подключиться к серверу"); // установление соединения с сервером
 mysql_query('SET NAMES cp1251'); // тип кодировки
@@ -22,7 +23,7 @@ mysql_select_db("sql11458111") or die("Нет такой таблицы!");
         <th> Редактировать </th>
         <th> Уничтожить </th>
     </tr>
-    <?php
+    <?php error_reporting(E_ALL ^ E_DEPRECATED);
     $result=mysql_query("SELECT id_game,Name_game, Genre, Developer,Publisher,Sales FROM Games");
     while ($row=mysql_fetch_array($result)){// для каждой строки из запроса
         echo "<tr>";
@@ -52,7 +53,7 @@ mysql_select_db("sql11458111") or die("Нет такой таблицы!");
             <th> Редактировать </th>
             <th> Уничтожить </th>
         </tr>
-        <?php
+        <?php error_reporting(E_ALL ^ E_DEPRECATED);
         $result=mysql_query("SELECT id_store,Name, URL FROM Stores");
         while ($row=mysql_fetch_array($result)){// для каждой строки из запроса
             echo "<tr>";
@@ -82,7 +83,7 @@ mysql_select_db("sql11458111") or die("Нет такой таблицы!");
                 <th> Уничтожить </th>
             </tr>
 
-            <?php
+            <?php error_reporting(E_ALL ^ E_DEPRECATED);
             //id_key,Data_P,Data_end, id_game,id_store,price,Game_key
             $result=mysql_query("SELECT * FROM Game_keys 
             inner join Games ON Game_keys.id_game = Games.id_game 
@@ -108,6 +109,35 @@ mysql_select_db("sql11458111") or die("Нет такой таблицы!");
             <p> <a href="new_key.php"> Добавить ключ</a>
             <p> <a href="gen_pdf.php"> PDF</a>
             <p> <a href="gen_xls.php"> XLS</a>
+            <h2>Пользователи:</h2>
+            <table border="1">
+                <tr>
+
+                    <th> Логин </th>
+                    <th> Пароль </th>
+                    <th> Тип пользователя </th>
+                    <th> Редактировать </th>
+                    <th> Уничтожить </th>
+                </tr>
+                <?php error_reporting(E_ALL ^ E_DEPRECATED);
+                $result=mysql_query("SELECT * FROM users");
+                while ($row=mysql_fetch_array($result)){// для каждой строки из запроса
+                    echo "<tr>";
+                    echo "<td>" . $row['username'] . "</td>";
+                    echo "<td>" . $row['password'] . "</td>";
+                    echo "<td>" . $row['type'] . "</td>";
+                    echo "<td><a href='edit_user.php?id=" . $row['id_user']
+                        . "'>Редактировать</a></td>"; // запуск скрипта для редактирования
+
+                    echo "<td><a href='delete.php?table=users&colID=id_user&id=" . $row['id_user']
+                        . "'>Удалить</a></td>"; // запуск скрипта для удаления записи
+                    echo "</tr>";
+                }
+                print "</table>";
+                $num_rows = mysql_num_rows($result); // число записей в таблице БД
+                print("<P>Всего пользователей: $num_rows </p>");
+                ?>
+                <p> <a href="new_user.php"> Добавить пользователя</a>
 <p><a href= "../index.php">Назад</a></p>
 </body>
 </html>
