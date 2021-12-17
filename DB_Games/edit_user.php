@@ -32,11 +32,13 @@ print "<br>Пароль: <input name='pass' size='50' type='text'
 required>";
 echo " <br>Тип пользователя(1-Оператор, 2-Админ): <select name='selecttype'>";
 $result=mysql_query("SELECT type FROM users");
-while ($row=mysql_fetch_array($result)){// для каждой строки из запроса
+echo "<option value='1'>1</option>";
+echo "<option value='2'>2</option>";
+/*while ($row=mysql_fetch_array($result)){// для каждой строки из запроса
 
     echo "<option value=".$row['type'] ." >".$row['type']."</option> ";
 
-}
+}*/
 
 
 
