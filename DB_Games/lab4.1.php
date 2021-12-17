@@ -172,8 +172,8 @@ if ($_SESSION['Usertype'] == '2') {
              echo "<td>" . $row['Sales'] . "</td>";
 
 
-             echo "<td><a href='delete.php?table=games&colID=id_game&id=" . $row['id_game']
-                 . "'>Удалить</a></td>"; // запуск скрипта для удаления записи
+             echo "<td><a href='edit_key.php?id=" . $row['id_game']
+             . "'>Редактировать</a></td>"; // запуск скрипта для редактирования
              echo "</tr>";
          }
          print "</table>";
