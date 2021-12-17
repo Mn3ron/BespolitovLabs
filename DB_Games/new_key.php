@@ -1,8 +1,12 @@
-<html>
-<head> <title> Добавление нового ключа</title> </head>
-<body>
-<header>Бесполитов Д.А.</header>
-<?php error_reporting(E_ALL ^ E_DEPRECATED);
+<?php
+session_start();
+require_once ('logincheck.php');
+check();
+print "<html>";
+print "<head> <title> Добавление нового ключа</title> </head>";
+print "<body>";
+print "<header>Бесполитов Д.А.</header>";
+error_reporting(E_ALL ^ E_DEPRECATED);
 mysql_connect("localhost", "root") or die ("Невозможно
 подключиться к серверу"); // установление соединения с сервером
 mysql_query('SET NAMES cp1251'); // тип кодировки
@@ -39,7 +43,6 @@ mysql_select_db("sql11458111") or die("Нет такой таблицы!");
     <p><input name="add" type="submit" value="Добавить">
         <input name="b2" type="reset" value="Очистить"></p>
 </form>
-<p>
-    <a href="lab4.1.php"> Вернуться к списку игр </a>
+<p><a href="lab4.1.php"> Вернуться к списку игр </a>
 </body>
 </html>

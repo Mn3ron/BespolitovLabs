@@ -1,10 +1,14 @@
-<html>
-<header>Бесполитов Д.А.</header>
-<head
-<title> Редактирование данных о магазине </title>
-</head>
-<body>
-<?php error_reporting(E_ALL ^ E_DEPRECATED);
+<?php
+session_start();
+require_once ('logincheck.php');
+check();
+print "<html>";
+print "<header>Бесполитов Д.А.</header>";
+print "<head>";
+print "<title> Редактирование данных о магазине </title>";
+print "</head>";
+print "<body>";
+ error_reporting(E_ALL ^ E_DEPRECATED);
 mysql_connect("localhost", "root") or die ("Невозможно
 подключиться к серверу"); // установление соединения с сервером
 mysql_query('SET NAMES cp1251'); // тип кодировки

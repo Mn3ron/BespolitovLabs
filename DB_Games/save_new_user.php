@@ -1,4 +1,7 @@
 <?php
+session_start();
+require_once ('logincheck.php');
+check();
 // Подключение к базе данных:
 error_reporting(E_ALL ^ E_DEPRECATED);
 mysql_connect("localhost", "root") or die ("Невозможно

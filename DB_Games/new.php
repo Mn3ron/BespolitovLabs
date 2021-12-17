@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once ('logincheck.php');
+check();
+?>
 <html>
 <head> <title> Добавление новой игры </title> </head>
 <body>
