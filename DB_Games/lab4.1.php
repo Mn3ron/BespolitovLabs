@@ -126,7 +126,7 @@ if ($_SESSION['Usertype'] == '2') {
                     <th> Редактировать </th>
                     <th> Уничтожить </th>
                 </tr>';
-    error_reporting(E_ALL ^ E_DEPRECATED);
+
     $result = mysql_query("SELECT * FROM users");
     while ($row = mysql_fetch_array($result)) {// для каждой строки из запроса
         echo "<tr>";
