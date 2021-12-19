@@ -96,11 +96,12 @@ if ($_SESSION['Usertype'] == '2') {
             inner join Games ON Game_keys.id_game = Games.id_game 
             inner join Stores ON Game_keys.id_store = Stores.id_store");
     while ($row = mysql_fetch_array($result)) {// для каждой строки из запроса
+
         echo "<tr>";
         echo "<td>" . $row['Name_game'] . "</td>";
         echo "<td>" . $row['Name'] . "</td>";
-        echo "<td>" . $row['Data_p'] . "</td>";
-        echo "<td>" . $row['Data_end'] . "</td>";
+        echo "<td>" . date('d-m-Y',strtotime($row['Data_p'])) . "</td>";
+        echo "<td>" . date('d-m-Y',strtotime($row['Data_end'])) . "</td>";
         echo "<td>" . $row['Price'] . "</td>";
         echo "<td>" . $row['Game_key'] . "</td>";
         echo "<td><a href='edit_key.php?id=" . $row['id_key']
@@ -228,8 +229,8 @@ if ($_SESSION['Usertype'] == '2') {
              echo "<tr>";
              echo "<td>" . $row['Name_game'] . "</td>";
              echo "<td>" . $row['Name'] . "</td>";
-             echo "<td>" . $row['Data_p'] . "</td>";
-             echo "<td>" . $row['Data_end'] . "</td>";
+             echo "<td>" . date('d-m-Y',strtotime($row['Data_p'])) . "</td>";
+             echo "<td>" . date('d-m-Y',strtotime($row['Data_end'])) . "</td>";
              echo "<td>" . $row['Price'] . "</td>";
              echo "<td>" . $row['Game_key'] . "</td>";
              echo "<td><a href='edit_key.php?id=" . $row['id_key']
