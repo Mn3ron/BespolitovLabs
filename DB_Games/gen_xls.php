@@ -44,8 +44,8 @@ while ($row = mysql_fetch_array($result)) {
     $active_sheet->setCellValue('D'.$i.'',$row['Developer']);
     $active_sheet->setCellValue('E'.$i.'',$row['Publisher']);
     $active_sheet->setCellValue('F'.$i.'',$row['Game_key']);
-    $active_sheet->setCellValue('G'.$i.'',$row['Data_p']);
-    $active_sheet->setCellValue('H'.$i.'',$row['Data_end']);
+    $active_sheet->setCellValue('G'.$i.'',date('d.m.Y',strtotime($row['Data_p'])));
+    $active_sheet->setCellValue('H'.$i.'',date('d.m.Y',strtotime($row['Data_end'])));
     $active_sheet->setCellValue('I'.$i.'',$row['URL']);
     $i++;
     $num++;

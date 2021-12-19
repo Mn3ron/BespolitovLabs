@@ -100,8 +100,8 @@ if ($_SESSION['Usertype'] == '2') {
         echo "<tr>";
         echo "<td>" . $row['Name_game'] . "</td>";
         echo "<td>" . $row['Name'] . "</td>";
-        echo "<td>" . date('d-m-Y',strtotime($row['Data_p'])) . "</td>";
-        echo "<td>" . date('d-m-Y',strtotime($row['Data_end'])) . "</td>";
+        echo "<td>" . date('d.m.Y',strtotime($row['Data_p'])) . "</td>";
+        echo "<td>" . date('d.m.Y',strtotime($row['Data_end'])) . "</td>";
         echo "<td>" . $row['Price'] . "</td>";
         echo "<td>" . $row['Game_key'] . "</td>";
         echo "<td><a href='edit_key.php?id=" . $row['id_key']
@@ -229,8 +229,8 @@ if ($_SESSION['Usertype'] == '2') {
              echo "<tr>";
              echo "<td>" . $row['Name_game'] . "</td>";
              echo "<td>" . $row['Name'] . "</td>";
-             echo "<td>" . date('d-m-Y',strtotime($row['Data_p'])) . "</td>";
-             echo "<td>" . date('d-m-Y',strtotime($row['Data_end'])) . "</td>";
+             echo "<td>" . date('d.m.Y',strtotime($row['Data_p'])) . "</td>";
+             echo "<td>" . date('d.m.Y',strtotime($row['Data_end'])) . "</td>";
              echo "<td>" . $row['Price'] . "</td>";
              echo "<td>" . $row['Game_key'] . "</td>";
              echo "<td><a href='edit_key.php?id=" . $row['id_key']
@@ -253,7 +253,7 @@ if ($_SESSION['Usertype'] == '2') {
                     <th> Пароль </th>
                     <th> Тип пользователя </th>
                     <th> Редактировать </th>
-                    <th> Уничтожить </th>
+                    
                 </tr>';
          error_reporting(E_ALL ^ E_DEPRECATED);
 
@@ -266,8 +266,7 @@ if ($_SESSION['Usertype'] == '2') {
              echo "<td><a href='edit_user.php?id=" . $row['id_user']
                  . "'>Редактировать</a></td>"; // запуск скрипта для редактирования
 
-             echo "<td><a href='delete.php?table=users&colID=id_user&id=" . $row['id_user']
-                 . "'>Удалить</a></td>"; // запуск скрипта для удаления записи
+             
              echo "</tr>";
          }
          print "</table>";

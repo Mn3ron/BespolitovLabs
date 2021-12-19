@@ -41,8 +41,8 @@ class PDF_gen extends FPDF
             $this->Cell(50, 5, $row['Developer'], 1, 0, 'J',1);
             $this->Cell(50, 5, $row['Publisher'], 1, 0, 'J',1);
             $this->Cell(45, 5, $row['Game_key'], 1, 0, 'J',1);
-            $this->Cell(50, 5, $row['Data_p'], 1, 0, 'J',1);
-            $this->Cell(50, 5, $row['Data_end'], 1, 0, 'J',1);
+            $this->Cell(50, 5, date('d.m.Y',strtotime($row['Data_p'])), 1, 0, 'J',1);
+            $this->Cell(50, 5, date('d.m.Y',strtotime($row['Data_end'])), 1, 0, 'J',1);
             $this->Cell(50, 5, $row['URL'], 1, 0, 'J',1);
             $this->Ln();
 
